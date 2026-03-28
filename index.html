@@ -9,18 +9,36 @@
       padding: 0;
       background-color: #0f172a;
       color: white;
+      line-height: 1.6;
     }
+
     section {
-      padding: 60px 20px;
-      text-align: center;
+      padding: 80px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
-    h1, h2 {
+
+    section:nth-child(even) {
+      background-color: #1e293b;
+    }
+
+    .text-block {
+      flex: 1 1 400px;
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    .text-block h2 {
       margin-bottom: 20px;
     }
-    p {
+
+    .text-block p {
       margin-bottom: 30px;
       color: #cbd5f5;
     }
+
     .btn {
       display: inline-block;
       padding: 12px 24px;
@@ -29,9 +47,28 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      margin-top: 10px;
     }
-    .section-light {
-      background-color: #1e293b;
+
+    .image-block {
+      flex: 1 1 400px;
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    .image-block img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 900px) {
+      section {
+        flex-direction: column;
+      }
+      .text-block, .image-block {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
@@ -39,39 +76,76 @@
 
   <!-- Hero Section -->
   <section>
-    <h1>Welcome to ILYFT4U</h1>
-    <p>Rides. Delivery. Simple payments. Built for real people in DFW—fast, fair, and dependable.</p>
-    <a class="btn" href="#">Book a Ride</a>
+    <div class="text-block">
+      <h1>Welcome to ILYFT4U</h1>
+      <p>Rides. Delivery. Simple payments. Built for real people in DFW—fast, fair, and dependable.</p>
+      <a class="btn" href="#">Book a Ride</a>
+    </div>
+    <div class="image-block">
+      <img src="hero-image.jpg" alt="ILYFT4U vehicle in action">
+    </div>
   </section>
 
-  <!-- How It Works Section -->
-  <section class="section-light">
-    <h2>How It Works</h2>
-    <p>Use our text-based system to request a ride, get confirmation, and pay—all in under 60 seconds.</p>
-  </section>
-
-  <!-- Extended Description Section -->
+  <!-- How It Works -->
   <section>
-    <h2>Why ILYFT4U Exists</h2>
-    <p>
-      ILYFT4U was born from the need for a simple, human-first way to move, deliver, and pay.  
-      In a world of complex apps and endless logins, we stripped away the noise to create a system that’s fast, transparent, and personal.  
-      Every ride is about trust, every delivery is about reliability, and every transaction is simple and secure.  
-      We focus on real people, real experiences, and a grounded approach that puts service before technology.
-    </p>
+    <div class="image-block">
+      <img src="how-it-works.jpg" alt="Illustration of simple ride flow">
+    </div>
+    <div class="text-block">
+      <h2>How It Works</h2>
+      <p>Request a ride via text, get quick confirmation, and pay securely in seconds.  
+      No apps, no logins—just simple, human-first service designed for real life.</p>
+    </div>
   </section>
 
-  <!-- Trust & Experience Section -->
-  <section class="section-light">
-    <h2>Meet Your Trail-Boss</h2>
-    <p>Real drivers with thousands of safe miles. No algorithms—just dependable, human service.</p>
-  </section>
-
-  <!-- Call to Action Section -->
+  <!-- Extended Description -->
   <section>
-    <h2>Get Started Today</h2>
-    <p>Skip the app downloads. Skip the logins. Your ride is just a text away.</p>
-    <a class="btn" href="#">Request Your Ride</a>
+    <div class="text-block">
+      <h2>Why ILYFT4U Exists</h2>
+      <p>We built ILYFT4U to simplify everyday travel and delivery.  
+      In a world of complex apps and endless logins, we focus on clarity, trust, and speed.  
+      Every ride is personal, every delivery is reliable, and every transaction is simple.</p>
+    </div>
+    <div class="image-block">
+      <img src="story-image.jpg" alt="Driver interacting with rider">
+    </div>
+  </section>
+
+  <!-- Trust & Experience -->
+  <section>
+    <div class="image-block">
+      <img src="driver-image.jpg" alt="Meet your Trail-Boss driver">
+    </div>
+    <div class="text-block">
+      <h2>Meet Your Trail-Boss</h2>
+      <p>Experienced drivers with thousands of safe miles. No anonymous algorithms—just dependable, human service you can trust.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section>
+    <div class="text-block">
+      <h2>Get Started Today</h2>
+      <p>Skip the app downloads. Skip the logins. Your ride is just a text away.</p>
+      <a class="btn" href="#">Request Your Ride</a>
+    </div>
+    <div class="image-block">
+      <img src="cta-image.jpg" alt="Rider enjoying a ride">
+    </div>
+  </section>
+
+  <!-- Footer / Ecosystem Links -->
+  <section>
+    <div class="text-block">
+      <h2>Explore Our Ecosystem</h2>
+      <p>From rideshare to side-hustle systems and tech education—our ecosystem supports your journey.</p>
+      <a class="btn" href="https://ilyft4u.com" target="_blank">ILYFT4U.com</a>
+      <a class="btn" href="https://unbridlednation.com" target="_blank">UnbridledNation.com</a>
+      <a class="btn" href="https://unbridledtechacademy.com" target="_blank">UnbridledTechAcademy.com</a>
+    </div>
+    <div class="image-block">
+      <img src="ecosystem-image.jpg" alt="Illustration of ecosystem">
+    </div>
   </section>
 
 </body>
