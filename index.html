@@ -4,24 +4,24 @@
   <title>ILYFT4U</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #0f172a;
-      color: white;
+      background-color: #0f172a; /* dark navy background */
+      color: #f1f5f9; /* soft white text */
       line-height: 1.6;
     }
 
     section {
-      padding: 80px 20px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      padding: 80px 20px;
     }
 
     section:nth-child(even) {
-      background-color: #1e293b;
+      background-color: #1e293b; /* slightly lighter section for contrast */
     }
 
     .text-block {
@@ -30,8 +30,9 @@
       margin: 20px;
     }
 
-    .text-block h2 {
+    .text-block h1, .text-block h2 {
       margin-bottom: 20px;
+      color: #f1f5f9;
     }
 
     .text-block p {
@@ -41,13 +42,18 @@
 
     .btn {
       display: inline-block;
-      padding: 12px 24px;
-      background-color: #22c55e;
-      color: black;
+      padding: 14px 28px;
+      background-color: #7f1d1d; /* maroon accent */
+      color: #f1f5f9;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      margin-top: 10px;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #b91c1c;
+      transform: scale(1.05);
     }
 
     .image-block {
@@ -59,7 +65,7 @@
     .image-block img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     }
 
     @media (max-width: 900px) {
@@ -70,6 +76,7 @@
         max-width: 90%;
       }
     }
+
   </style>
 </head>
 <body>
@@ -82,19 +89,19 @@
       <a class="btn" href="#">Book a Ride</a>
     </div>
     <div class="image-block">
-      <img src="hero-image.jpg" alt="ILYFT4U vehicle in action">
+      <img src="hero-image.jpg" alt="ILYFT4U vehicle on the road">
     </div>
   </section>
 
   <!-- How It Works -->
   <section>
     <div class="image-block">
-      <img src="how-it-works.jpg" alt="Illustration of simple ride flow">
+      <img src="how-it-works.jpg" alt="Illustration of text-based ride flow">
     </div>
     <div class="text-block">
       <h2>How It Works</h2>
-      <p>Request a ride via text, get quick confirmation, and pay securely in seconds.  
-      No apps, no logins—just simple, human-first service designed for real life.</p>
+      <p>Request a ride or delivery via text, get quick confirmation, and pay securely.  
+         No apps. No logins. Just fast, human-first service.</p>
     </div>
   </section>
 
@@ -103,22 +110,23 @@
     <div class="text-block">
       <h2>Why ILYFT4U Exists</h2>
       <p>We built ILYFT4U to simplify everyday travel and delivery.  
-      In a world of complex apps and endless logins, we focus on clarity, trust, and speed.  
-      Every ride is personal, every delivery is reliable, and every transaction is simple.</p>
+         In a world of complex apps, we focus on clarity, trust, and speed.  
+         Every ride is personal, every delivery reliable, and every transaction simple and secure.</p>
     </div>
     <div class="image-block">
-      <img src="story-image.jpg" alt="Driver interacting with rider">
+      <img src="story-image.jpg" alt="Driver helping a passenger">
     </div>
   </section>
 
   <!-- Trust & Experience -->
   <section>
     <div class="image-block">
-      <img src="driver-image.jpg" alt="Meet your Trail-Boss driver">
+      <img src="driver-image.jpg" alt="Trail-Boss driver on the road">
     </div>
     <div class="text-block">
       <h2>Meet Your Trail-Boss</h2>
-      <p>Experienced drivers with thousands of safe miles. No anonymous algorithms—just dependable, human service you can trust.</p>
+      <p>Experienced drivers with thousands of safe miles.  
+         No anonymous algorithms—just dependable human service you can trust.</p>
     </div>
   </section>
 
@@ -144,7 +152,7 @@
       <a class="btn" href="https://unbridledtechacademy.com" target="_blank">UnbridledTechAcademy.com</a>
     </div>
     <div class="image-block">
-      <img src="ecosystem-image.jpg" alt="Illustration of ecosystem">
+      <img src="ecosystem-image.jpg" alt="Illustration of the ecosystem">
     </div>
   </section>
 
